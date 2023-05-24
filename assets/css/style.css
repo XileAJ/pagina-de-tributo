@@ -1,0 +1,613 @@
+body {
+   margin: 0;
+   padding-top: 97px;
+   background-color: #282828;
+   
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding-top:10px;
+	padding-bottom: 10px;
+	background: #282828;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid white;
+    
+    
+}
+
+
+.container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+
+.title{
+    color: white;
+
+    
+}
+.gilenosantoro{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    
+}
+.tributo{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
+    
+
+    
+}
+.menu{
+   display: flex;
+   align-items: center;
+   
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration:none;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+nav a:hover{
+    background-color: orange;
+    
+}
+#inicio{
+    display: flex;
+    justify-content: center;
+    background-color: #293277;
+    padding-top:25px;
+    
+    
+    
+    
+        
+}
+.texto{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+.fotoperfil {
+    width: 400px;
+
+}
+
+.fotoperfil img{
+    object-fit: cover;
+    width: 100%;
+    height: 470px;
+    margin-top: 10px;
+    border: 5px solid white;
+}
+.perfildesc p{
+    font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	line-height:180%;
+    color: white;
+    margin-left: 25px;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    
+}
+.perfildesc{
+    margin-top: 23px;
+}
+.personagens{
+    height: 284px;
+    display: flex;
+    padding: 15px; 
+}
+.mestrekame,
+.tiojack,
+.futurama{
+    flex: 1;     
+}
+
+.mestrekame img,
+.tiojack img,
+.futurama img{
+    width: 100%;
+    height: 100%;
+}
+.mestrekame IMG{
+   object-fit: scale-down;
+}
+.tiojack IMG{
+    object-fit: cover;
+}
+.futurama IMG{
+    object-fit: cover;
+}
+#biografia{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color:  #d76d36;
+    
+    
+}
+.biografia{
+    flex: 1;
+    
+}
+.biodesc{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.biografia p{
+    font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    margin-right: 15px;
+    
+}
+
+.titleimg{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 24px;
+}
+.bioimg{
+    width: 295px;        
+    margin-top: 12px;
+ }
+.bioimg img{
+    width: 100%;
+    height: 265px;
+    margin-top: 5px;
+    object-fit: scale-down;
+    border: 5px solid white;
+    
+    
+}
+#carreira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color:#a6302f;
+    
+    
+    
+}
+.carreiradesc{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+
+.carreira p{
+    font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+}
+.carreira{
+    flex: 1;
+}
+.carreiraimg{
+    width: 323px;
+    margin: 0;
+    
+}
+.carreiraimg img{
+    width: 100%;
+    height: 265px;
+    margin-top: 10px;
+    border: 5px solid white;
+    object-fit: cover;
+       
+}
+.titlecarreira{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 66px;
+}
+.carreiradesc1 p{
+    font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    margin-left: 25px;
+    margin-top: 42px;
+    
+}
+.column{
+    flex-direction: column;
+    
+}
+
+.carreiradesc2{
+    font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;   
+    display: flex;
+    flex: 1;
+}
+
+.carreiradesc2 p{
+    margin-top: 10px;
+    padding: 0;
+    flex: 1;
+}
+.carreiraimg2{
+    width: 500px;
+    margin-left: 15px;
+}
+.jackchan{
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.carreiraimg2 img{
+    width: 100%;
+    border: 5px solid white;
+    margin-top: 18px;
+    
+}
+.carreiraimg5{
+    width: 280px;
+}
+.carreiraimg3 img,
+.carreiraimg4 img{
+    width: 100%;
+    height: 350px;
+}
+.carreiraimg5 img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 320px;
+}
+.video{
+  width: 400px;
+  margin-right: 25px;
+  margin-top: 26px;
+    
+}
+.video video{ 
+    border: 5px solid white; 
+    width: 100%;
+}
+.carreiradesc3 {
+    font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    display: flex;  
+}
+#trabalhos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #34495e;
+    justify-content: center;
+
+}
+
+.trabalhotext{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.trabalhotitulo p{
+    font-size: 20px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 0;
+    margin-bottom: 0;
+}
+.trabalhotitulo .sublinhado {
+    width: 1200px;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #cecece;
+}
+.trabalhotitulo h2{
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+    font-style: italic;
+}
+.lista ul{
+    color: white;
+    font-family: arial;
+    font-style: italic;
+}
+.trabalhosteatro{
+    display: flex;
+    justify-content:space-between;
+    flex: 1;
+
+}
+.trabalhotitle p{
+    font-family: arial;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+.trabalhotitle li{
+    line-height: 32px;
+}
+.teatroimg{
+    width: 215px;
+    height: 350px;
+    margin-top: 10px;
+}
+.teatroimg img{
+    width: 100%;
+    border: 5px solid white; 
+}
+.teatrodescgileno{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+
+}
+.divtrabalho p{
+    font-family: arial;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+   
+}
+.divtrabalho li{
+    line-height: 32px;
+}
+.divtrabalho h2{
+    font-family: arial;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: underline;
+}
+#vidapessoal{
+    display: flex;
+    background-color: #d76d36;
+    justify-content: center;
+    padding-top: 20px;
+}
+.vidapessoaldesc p{
+    font-family: 'Raleway', sans-serif;
+    font-size:18px;
+    line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    margin-right: 15px;   
+}
+.vidaimg{
+    width: 900px;
+    margin-top: 10px;
+    
+}
+.vidaimg img{
+    width: 100%;
+    object-fit: scale-down;
+    border: 5px solid white; 
+}
+#morte{
+    background-color: #212121;
+    align-items: center;
+    padding-top: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+.homenagemdesc p{
+    font-family: 'Raleway', sans-serif;
+    font-size:18px;
+    line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    margin-right: 15px; 
+}
+
+.mortedesc p{
+    font-family: 'Raleway', sans-serif;
+    font-size:18px;
+    line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    margin-right: 15px; 
+    
+}
+.biotitulo{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.homenagem{
+    display: flex;
+    flex: 1;
+    
+   
+}
+.homenagemdesc {
+    margin-top: 18px;
+    width: 300px;
+    flex: 1;
+    margin-right: 22px;
+}
+.homenagemdesc img{
+   width: 100%;
+   height: 542px; 
+   border: 5px solid white; 
+   object-fit: cover;
+}
+
+.divdesc  {
+    flex: 2;
+    margin: 0;
+    padding: 0;
+}
+.divdesc p{
+    font-family: 'Raleway', sans-serif;
+    font-size:18px;
+    line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    margin-right: 15px; 
+
+}
+#wikipedia{
+    background-color: #0e78bb;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.wikipediadesc{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+.wikipediadesc p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size:14px;
+    line-height:180%;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    margin-right: 15px; 
+
+}
+.wikipediadesc a {
+    color:#020202;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.footermenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    
+}
+.githubicon{
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
+    padding: 0;
+    
+}
+.githubicon img{
+    width: 100%;
+}
+.instagramicon{
+    width: 52px;
+    height: 52px; 
+    padding: 0;
+}
+.instagramicon img{
+    width: 100%;
+}
+.autordesc p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size:14px;
+    color: white;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+ 
+    
+}
