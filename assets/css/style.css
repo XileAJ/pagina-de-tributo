@@ -2,7 +2,7 @@ body {
    margin: 0;
    padding-top: 97px;
    background-color: #282828;
-   
+   width: 100%;
 }
 header{
     display: flex;
@@ -19,13 +19,15 @@ header{
     
 }
 
-
 .container{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    
+    padding: 0;
 }
 
 
@@ -63,34 +65,35 @@ nav li{
     padding: 0;
     
     
+    
 }
 nav ul{
     display: flex;
 }
+
 nav a{
     display: block;
-    padding: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
     text-decoration:none;
     font-size: 16px;
     color: white;
     text-transform: uppercase;
+    transition: transform 0.3s, box-shadow 0.2s;
     font-weight: bold;
     font-family: sans-serif;
 }
 nav a:hover{
-    background-color: orange;
+    color: orange;
+    transform: translateY(-3px);
+    box-shadow: 0px, 3px, 6px rgba(0, 0, 0, 0.1);
     
 }
 #inicio{
     display: flex;
     justify-content: center;
     background-color: #293277;
-    padding-top:25px;
-    
-    
-    
-    
-        
+    padding-top:25px;    
 }
 .texto{
     font-size: 25px;
@@ -103,9 +106,7 @@ nav a:hover{
 }
 .fotoperfil {
     width: 400px;
-
 }
-
 .fotoperfil img{
     object-fit: cover;
     width: 100%;
@@ -120,8 +121,7 @@ nav a:hover{
     color: white;
     margin-left: 25px;
     letter-spacing: 0.5px;
-    line-height: 21px;
-    
+    line-height: 21px;   
 }
 .perfildesc{
     margin-top: 23px;
@@ -156,13 +156,10 @@ nav a:hover{
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    background-color:  #d76d36;
-    
-    
+    background-color:  #d76d36;  
 }
 .biografia{
-    flex: 1;
-    
+    flex: 1;   
 }
 .biodesc{
     font-size: 25px;
@@ -179,10 +176,8 @@ nav a:hover{
     color: white;
     letter-spacing: 0.5px;
     line-height: 21px;
-    margin-right: 15px;
-    
+    margin-right: 15px;   
 }
-
 .titleimg{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
@@ -198,9 +193,7 @@ nav a:hover{
     height: 265px;
     margin-top: 5px;
     object-fit: scale-down;
-    border: 5px solid white;
-    
-    
+    border: 5px solid white;   
 }
 #carreira{
     display: flex;
@@ -208,9 +201,6 @@ nav a:hover{
     align-items: center;
     padding-top: 20px;
     background-color:#a6302f;
-    
-    
-    
 }
 .carreiradesc{
     font-size: 25px;
@@ -219,7 +209,6 @@ nav a:hover{
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
-    
 }
 
 .carreira p{
@@ -301,7 +290,6 @@ nav a:hover{
     width: 100%;
     border: 5px solid white;
     margin-top: 18px;
-    
 }
 .carreiraimg5{
     width: 280px;
@@ -319,13 +307,9 @@ nav a:hover{
 
 .video{
   width: 400px;
-  
   margin-right: 25px;
   margin-top: 26px;
-
 }
-
-
 .video iframe{ 
     border: 5px solid white; 
     width: 100%;
@@ -351,9 +335,7 @@ nav a:hover{
     padding-top: 20px;
     background-color: #34495e;
     justify-content: center;
-
 }
-
 .trabalhotext{
     font-size: 25px;
     color: white;
@@ -419,14 +401,12 @@ nav a:hover{
     font-weight: bold;
     font-size: 13px;
     color: white;
-
 }
 .divtrabalho p{
     font-family: arial;
     color: white;
     font-size: 20px;
     font-style: italic;
-   
 }
 .divtrabalho li{
     line-height: 32px;
@@ -456,7 +436,6 @@ nav a:hover{
 .vidaimg{
     width: 900px;
     margin-top: 10px;
-    
 }
 .vidaimg img{
     width: 100%;
@@ -470,9 +449,7 @@ nav a:hover{
     display: flex;
     flex: 1;
     flex-direction: column;
-    
 }
-
 .homenagemdesc p{
     font-family: 'Raleway', sans-serif;
     font-size:18px;
@@ -482,7 +459,6 @@ nav a:hover{
     line-height: 21px;
     margin-right: 15px; 
 }
-
 .mortedesc p{
     font-family: 'Raleway', sans-serif;
     font-size:18px;
@@ -490,8 +466,7 @@ nav a:hover{
     color: white;
     letter-spacing: 0.5px;
     line-height: 21px;
-    margin-right: 15px; 
-    
+    margin-right: 15px;    
 }
 .biotitulo{
     font-size: 25px;
@@ -504,8 +479,6 @@ nav a:hover{
 .homenagem{
     display: flex;
     flex: 1;
-    
-   
 }
 .homenagemdesc {
     margin-top: 18px;
@@ -519,7 +492,6 @@ nav a:hover{
    border: 5px solid white; 
    object-fit: cover;
 }
-
 .divdesc  {
     flex: 2;
     margin: 0;
@@ -533,21 +505,17 @@ nav a:hover{
     letter-spacing: 0.5px;
     line-height: 21px;
     margin-right: 15px; 
-
 }
 #wikipedia{
     background-color: #0e78bb;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    
 }
 .wikipediadesc{
     display: flex;
     width: 100%;
     justify-content: center;
-    
-    
 }
 .wikipediadesc p{
     font-family: Arial, Helvetica, sans-serif;
@@ -559,18 +527,13 @@ nav a:hover{
     letter-spacing: 0.5px;
     line-height: 21px;
     margin-right: 15px; 
-
 }
 .wikipediadesc a {
     color:#020202;
-    
 }
-
 footer{
     display: flex;
-    justify-content: center;
-    
-   
+    justify-content: center;  
 }
 .footermenu{
     display: flex;
@@ -578,20 +541,17 @@ footer{
     align-items: center;
     width: 100%;
 }
-
 .icons{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    margin-bottom: 7px;
-    
+    margin-bottom: 7px;   
 }
 .githubicon{
     width: 46px;
     height: 46px;
     margin-right: 10px;
     padding: 0;
-    
 }
 .githubicon img{
     width: 100%;
@@ -614,6 +574,114 @@ footer{
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
- 
+}
+.menuMobile{
+    display: none;
+    width: 45px;
+    height: 35px;
+}
+.mm_line{
+    height: 3px;
+    background-color: white;
+}
+
+
+
+
+@media screen and (max-width: 1220px) {
+    
+    body{
+        width: 1200px;
+        
+    }
+    .container{
+        padding: 30px;
+    }
     
 }
+
+@media screen and (max-width: 1224px) {
+    header{
+        height: auto;
+    }
+    .gilenosantoro{
+        font-size: 33px;
+    }
+    .tributo{
+        font-size: 20px;
+    }
+}
+   
+@media screen and (max-width: 425px) {
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 560px;
+        margin-top: 55px;
+        background-color: #282828;
+        justify-content: space-around;
+        transition: 2s;
+        
+    }
+    nav a{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 30px;
+        
+    }
+    header{
+        height: auto;
+        
+    }
+   
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .gilenosantoro{
+        font-size: 40px;
+        margin-bottom: 7px;
+    }
+    .tributo {
+        font-size: 28px;
+    }
+    #inicio{
+        padding-top: 55px;
+    }
+    .fotoperfil{
+        width: 464px;
+    }
+    .perfildesc p{
+    font-size: 28px;
+    line-height: 29px;
+    }
+    .personagens {
+        height: 244px;
+        width: 680px;
+    }
+    .fotoperfil img{
+        height: 676px;
+    }
+    .texto {
+        font-size: 31px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
