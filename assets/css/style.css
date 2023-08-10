@@ -613,6 +613,11 @@ footer{
 }
    
 @media screen and (max-width: 425px) {
+    body{
+        width: 1200px;
+        
+    }
+    
     nav ul{
         flex-direction: column;
         display: none;
