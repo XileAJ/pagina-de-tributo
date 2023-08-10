@@ -2,7 +2,7 @@ body {
    margin: 0;
    padding-top: 97px;
    background-color: #282828;
-   width: 100%;
+   
 }
 header{
     display: flex;
@@ -591,7 +591,7 @@ footer{
 @media screen and (max-width: 1220px) {
     
     body{
-        width: 1200px;
+        width: 1400px;
         
     }
     .container{
@@ -612,11 +612,7 @@ footer{
     }
 }
    
-@media screen and (max-width: 425px) {
-    body{
-        width: 1200px;
-        
-    }
+@media screen and (max-width: 425px) {   
     
     nav ul{
         flex-direction: column;
@@ -647,34 +643,49 @@ footer{
         flex-direction: column;
         justify-content: space-between;
     }
-    .gilenosantoro{
-        font-size: 40px;
-        margin-bottom: 7px;
+    .gilenosanto{
+        font-size: 60px;
     }
-    .tributo {
-        font-size: 28px;
+    .tributo{
+        font-size: 40px;
     }
     #inicio{
-        padding-top: 55px;
+        padding-top: 100px;
     }
-    .fotoperfil{
-        width: 464px;
+    #inicio .container{
+        flex-direction: column;
+        padding: 30px;
     }
-    .perfildesc p{
-    font-size: 28px;
-    line-height: 29px;
+    .container{
+        width: 1200px;
     }
-    .personagens {
-        height: 244px;
-        width: 680px;
+    .texto{
+        font-size: 50px;
+    }
+    .fotoperfil {
+        width: 1138px;
     }
     .fotoperfil img{
-        height: 676px;
+        height: 1280px;
     }
-    .texto {
-        font-size: 31px;
+    .perfildesc{
+        margin-top: 0;
     }
-}
+    .perfildesc p{
+        font-size: 46px;
+        line-height: 73px;
+    }
+    .personagens{
+        height: 537px;
+        width: 1161px;
+    }
+    .mestrekame img, .tiojack img, .futurama img{
+        width: 390px;
+        height: 81%;
+    }
+
+
+
 
 
 
