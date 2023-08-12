@@ -2,7 +2,7 @@ body {
    margin: 0;
    padding-top: 97px;
    background-color: #282828;
-   
+   min-width: 1270px;
 }
 header{
     display: flex;
@@ -21,9 +21,8 @@ header{
 
 .container{
     width: 100%;
+    flex: 1;
     max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -95,6 +94,10 @@ nav a:hover{
     background-color: #293277;
     padding-top:25px;    
 }
+#inicio .container{
+   
+    
+}
 .texto{
     font-size: 25px;
     color: white;
@@ -125,33 +128,21 @@ nav a:hover{
 }
 .perfildesc{
     margin-top: 23px;
+    width: 100%;
 }
 .personagens{
-    height: 284px;
+    height: 265px;
     display: flex;
     padding: 15px; 
+    
 }
-.mestrekame,
-.tiojack,
-.futurama{
-    flex: 1;     
+.personagens img{
+    margin-left: 20px;
+}
+.futuramaimg {
+    height: 285px;
 }
 
-.mestrekame img,
-.tiojack img,
-.futurama img{
-    width: 100%;
-    height: 100%;
-}
-.mestrekame IMG{
-   object-fit: scale-down;
-}
-.tiojack IMG{
-    object-fit: cover;
-}
-.futurama IMG{
-    object-fit: cover;
-}
 #biografia{
     display: flex;
     justify-content: center;
@@ -285,6 +276,14 @@ nav a:hover{
     flex: 1;
     margin-top: 20px;
     justify-content: space-around;
+    height: 350px;
+}
+.jackchan img{
+    
+    object-fit: fill;
+}
+#maisumacoisa{
+    margin-bottom: 15px;
 }
 .carreiraimg2 img{
     width: 100%;
@@ -423,15 +422,20 @@ nav a:hover{
     background-color: #d76d36;
     justify-content: center;
     padding-top: 20px;
+    
 }
-.vidapessoaldesc p{
+.vidapessoaldesc2{
     font-family: 'Raleway', sans-serif;
     font-size:18px;
-    line-height:180%;
     color: white;
     letter-spacing: 0.5px;
-    line-height: 21px;
-    margin-right: 15px;   
+    line-height: 41px;
+    margin-left: 22px;
+    margin-top:40px;
+}
+.vidapessoalimg{
+    border: 5px solid white; 
+    width: 500px;
 }
 .vidaimg{
     width: 900px;
@@ -486,11 +490,12 @@ nav a:hover{
     flex: 1;
     margin-right: 22px;
 }
-.homenagemdesc img{
-   width: 100%;
-   height: 542px; 
+.homenagemimg{
+   width: 500px;
    border: 5px solid white; 
    object-fit: cover;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 .divdesc  {
     flex: 2;
@@ -505,6 +510,7 @@ nav a:hover{
     letter-spacing: 0.5px;
     line-height: 21px;
     margin-right: 15px; 
+    margin-left: 15px;
 }
 #wikipedia{
     background-color: #0e78bb;
@@ -577,114 +583,260 @@ footer{
 }
 .menuMobile{
     display: none;
-    width: 45px;
-    height: 35px;
+    width: 70px;
+    height: 55px;
+    font-weight: 800;
 }
 .mm_line{
     height: 3px;
     background-color: white;
 }
+@media screen and (min-width: 426px) {
+    .futuramaimg{
+        display:flex;
+    }
+}
 
-
-
-
-@media screen and (max-width: 1220px) {
-    
+@media screen and (max-width: 425px){
     body{
-        width: 1400px;
-        
+        width: 1420px;
     }
+    
     .container{
-        padding: 30px;
-    }
-    
-}
-
-@media screen and (max-width: 1224px) {
-    header{
-        height: auto;
-    }
-    .gilenosantoro{
-        font-size: 33px;
-    }
-    .tributo{
-        font-size: 20px;
-    }
-}
-   
-@media screen and (max-width: 425px) {   
-    
-    nav ul{
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 560px;
-        margin-top: 55px;
-        background-color: #282828;
-        justify-content: space-around;
-        transition: 2s;
-        
-    }
-    nav a{
-        padding-top: 18px;
-        padding-bottom: 18px;
-        font-size: 30px;
-        
-    }
-    header{
-        height: auto;
-        
-    }
-   
-    .menuMobile{
+        width: auto;
+        flex: 1;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        flex-direction: row;
+        padding: 0;
+        }
+            
+        nav ul{
+            flex-direction: column;
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 601px;
+            margin-top: 119px;
+            background-color: #282828;
+            justify-content: space-around;
+            transition: 2s;
+            
+        }
+        nav a{
+            font-size: 56px;
+            margin-top: 37px;
+        }
+        header{
+            height: 190px;
+            padding-bottom:50px;
+        }
+       
+        .menuMobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    .gilenosantoro{
+        font-size: 85px;
     }
-    .gilenosanto{
-        font-size: 60px;
-    }
-    .tributo{
-        font-size: 40px;
-    }
-    #inicio{
-        padding-top: 100px;
-    }
-    #inicio .container{
-        flex-direction: column;
-        padding: 30px;
-    }
-    .container{
-        width: 1200px;
-    }
-    .texto{
-        font-size: 50px;
-    }
-    .fotoperfil {
-        width: 1138px;
-    }
-    .fotoperfil img{
-        height: 1280px;
-    }
-    .perfildesc{
-        margin-top: 0;
-    }
-    .perfildesc p{
-        font-size: 46px;
-        line-height: 73px;
-    }
-    .personagens{
-        height: 537px;
-        width: 1161px;
-    }
-    .mestrekame img, .tiojack img, .futurama img{
-        width: 390px;
-        height: 81%;
-    }
-
-
+        .tributo{
+            font-size: 70px;
+        }
+        #inicio{
+            padding-top: 160px;
+        }
+        #inicio .container{
+            flex-direction: column;
+            padding: 30px;
+        }
+        .container{
+            width: 1200px;
+        }
+        .texto{
+            font-size: 70px;
+        }
+        .fotoperfil {
+            width: 1138px;
+        }
+        .fotoperfil img{
+            height: 1450px;
+        }
+        .perfildesc{
+            margin-top: 0;
+        }
+        .perfildesc p{
+            font-size: 62px;
+            line-height: 84px;
+        }
+        .personagens{
+            height: 690px;
+            padding: 0;
+        }
+            
+        .tiojack IMG{
+            object-fit: fill;
+            width: 509px;
+            height: 86%;
+            margin-left: 46px;
+            margin-top: 40px;
+        }
+        .mestrekame IMG{
+            object-fit: cover;
+            width: 123%;
+            height: 74%;
+            margin-top: 107px;
+            
+        }
+        .futuramaimg{
+            display: none;
+        }
+   
+        
+        .bioimg {
+            display: none;
+        }
+        .biografia p {
+            font-size: 62px;
+            line-height: 84px;
+        }
+        .biodesc{
+            font-size: 70px;
+        }
+        #carreira .container{
+            flex-direction: column;
+        }
+        .carreiradesc{
+            font-size: 70px;
+        }
+        .carreiraimg img{
+            width: 1200px;
+            height: 1010px;
+        }
+        .titlecarreira{
+            font-size: 36px;
+        }
+        .carreiradesc1 p{
+            font-size: 62px;
+            line-height: 84px;
+        }
+        .carreiradesc2 p{
+            font-size: 62px;
+            line-height: 84px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .carreiraimg2 img{
+            width: 1160px;
+            height: 733px;
+            
+        }
+        .carreiradesc3{
+            font-size: 62px;
+            line-height: 84px;
+        }
+        .jackchan{
+            flex-direction: column;
+            align-items: center;
+        }
+        .jackchan img{
+            height: 900px;
+            object-fit: cover;
+        }
+        .video{
+            width: 1200px;
+        }
+        .video iframe{
+            width: 97%;
+            height: 700px;
+            border: 10px solid white;
+        }
+        .trabalhotext{
+            font-size: 70px;
+            margin-bottom: 70px;
+        }
+        .divtrabalho p{
+            font-size: 55px;
+        }
+        .trabalhotitle p{
+            font-size: 60px;
+        }
+        .lista ul {
+            font-size: 62px;
+        }
+        .trabalhotitle li {
+            line-height: 150px;
+        }
+        .divtrabalho li {
+            line-height: 150px;
+        }
+        .divtrabalho h2{
+            font-size: 70px;
+        }
+        .teatroimg img{
+            display: none;
+        }
+        .teatrodescgileno{
+            display: none;
+        }
+        #vidapessoal .container{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .vidapessoalimg{
+            width: 100%;
+            height: 800px;
+            margin-top: 20px;
+            border: 10px solid white;
+        }
+        .vidapessoaldesc2 {
+            margin-top: 0;
+            font-size: 62px;
+            line-height: 84px;
+        }
+        .mortedesc p{
+            font-size: 62px;
+            line-height: 84px;
+        }
+        .trabalhotitulo p{
+            font-size: 70px;
+        }
+        .homenagem{
+            flex-direction: column;
+            align-items: center;
+        }
+        .homenagemimg{
+            width: 1200px;
+            border: 10px solid white;
+        }
+        .divdesc p{
+            font-size: 62px;
+            line-height: 84px;
+        }
+        .wikipediadesc p{
+            font-size: 50px;
+            line-height: 75px;
+            text-align: center;
+        }
+        .githubicon{
+            width: 150px;
+            height: 150px;
+        }
+        .instagramicon{
+            width: 150px;
+            height: 150px;
+        }
+        .autordesc p{
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .icons{
+            margin-top: 20px;
+        }
+}
+   
+   
 
 
 
