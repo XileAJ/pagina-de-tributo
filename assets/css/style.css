@@ -617,20 +617,22 @@ footer{
             position: absolute;
             left: 0;
             width: 100%;
-            height: 601px;
+            height: 800px;
             margin-top: 119px;
             background-color: #282828;
             justify-content: space-around;
-            transition: 2s;
+            
             
         }
         nav a{
-            font-size: 56px;
+            font-size: 70px;
             margin-top: 37px;
+            font-style: italic;
         }
         header{
             height: 190px;
             padding-bottom:50px;
+            
         }
        
         .menuMobile{
@@ -638,11 +640,26 @@ footer{
             flex-direction: column;
             justify-content: space-between;
         }
-    .gilenosantoro{
+        .menu nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none; /* Começa oculto */
+            opacity: 0; /* Começa transparente */
+            transition: opacity 0.3s ease, display 0.3s ease; /* Transições suaves */
+            margin-top: 115px;
+            text-align: center;
+
+        }
+        .gilenosantoro{
         font-size: 85px;
-    }
+        margin-bottom: 5px;
+        }
         .tributo{
-            font-size: 70px;
+            font-size: 70px;   
+        }
+        .title{
+            margin-top: 20px;
         }
         #inicio{
             padding-top: 160px;
@@ -834,6 +851,7 @@ footer{
         .icons{
             margin-top: 20px;
         }
+    
 }
    
    
