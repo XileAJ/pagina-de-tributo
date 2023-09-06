@@ -1,8 +1,10 @@
+
 body {
    margin: 0;
-   padding-top: 97px;
    background-color: #282828;
    min-width: 1270px;
+   padding-top: 97px;
+   scroll-behavior: smooth;
 }
 header{
     display: flex;
@@ -15,7 +17,6 @@ header{
     top: 0;
     left: 0;
     border-bottom: 1px solid white;
-    
     
 }
 
@@ -591,6 +592,10 @@ footer{
     height: 3px;
     background-color: white;
 }
+
+
+
+
 @media screen and (min-width: 426px) {
     .futuramaimg{
         display:flex;
