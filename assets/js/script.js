@@ -1,6 +1,10 @@
 window.onload = function () {
-    document.querySelector(".menuMobile").addEventListener("click", function () {
-        const menuNav = document.querySelector(".menu nav ul");
+    const menuMobile = document.querySelector(".menuMobile");
+    const menuNav = document.querySelector(".menu nav ul");
+
+    // Ouvinte de evento de clique no botão do menu
+    menuMobile.addEventListener("click", function (event) {
+        event.stopPropagation(); // Impede a propagação para o body
         if (menuNav.style.display === 'flex') {
             // Se o menu está aberto, fecha suavemente
             menuNav.style.opacity = '0';
@@ -16,19 +20,18 @@ window.onload = function () {
         }
     });
 
-    // Adicione um ouvinte de evento de clique ao document.body para fechar o menu quando clicar em qualquer lugar do body
-    document.body.addEventListener('click', function () {
-        const menuNav = document.querySelector('.menu nav ul');
-        menuNav.style.display = 'none'; // Oculte o menu
-    });
-
-    // Adicione um ouvinte de evento de clique ao menu para impedir que o clique nele propague até o body
-    const menuMobile = document.querySelector('.menuMobile');
-    menuMobile.addEventListener('click', function (event) {
-        // Impedir que o clique no menu se propague para o body
-        event.stopPropagation();
+    // Ouvinte de evento de clique no document.body para fechar o menu quando clicar fora do menu
+    document.body.addEventListener('click', function (event) {
+        if (!menuMobile.contains(event.target) && menuNav.style.display === 'flex') {
+            // Verifica se o clique ocorreu fora do menu e se o menu está aberto
+            menuNav.style.opacity = '0';
+            setTimeout(() => {
+                menuNav.style.display = 'none';
+            }, 300); // Tempo da animação em milissegundos
+        }
     });
 };
+
 
 
 function getDistanceFromTheTop (element) {
