@@ -15,7 +15,21 @@ window.onload = function () {
             }, 10); // Pequeno intervalo para a exibição ser ajustada antes da animação
         }
     });
-}
+
+    // Adicione um ouvinte de evento de clique ao document.body para fechar o menu quando clicar em qualquer lugar do body
+    document.body.addEventListener('click', function () {
+        const menuNav = document.querySelector('.menu nav ul');
+        menuNav.style.display = 'none'; // Oculte o menu
+    });
+
+    // Adicione um ouvinte de evento de clique ao menu para impedir que o clique nele propague até o body
+    const menuMobile = document.querySelector('.menuMobile');
+    menuMobile.addEventListener('click', function (event) {
+        // Impedir que o clique no menu se propague para o body
+        event.stopPropagation();
+    });
+};
+
 
 function getDistanceFromTheTop (element) {
     const id = element.getAttribute('href');
@@ -32,7 +46,7 @@ function nativeScroll (distanceFromTheTop) {
 
 function scrollToSection(event) {
     event.preventDefault();
-    const distanceFromTheTop = getDistanceFromTheTop(event.target) -90;
+    const distanceFromTheTop = getDistanceFromTheTop(event.target) -250;
     nativeScroll(distanceFromTheTop);
 }
 
@@ -42,9 +56,22 @@ menuLinks.forEach((link) => {
         
 });
 
+let buttonUP = document.querySelector('.scrollUpButton');
+buttonUP.addEventListener('click', ScrollUpButton);
+function ScrollUpButton () {
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+}
 
-
-
-
-
-
+function offButton () {
+    if(window.scrollY === 0) {
+        //ocultar botão
+        buttonUP.style.display = 'none'
+    }else{
+        //mostrar botão
+        buttonUP.style.display = 'block'
+    }
+}
+window.addEventListener('scroll', offButton);
