@@ -7,26 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale1.0">
     <title>Tributo Gileno Santoro</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript">
-        window.onload = function () {
-            document.querySelector(".menuMobile").addEventListener("click", function () {
-                const menuNav = document.querySelector(".menu nav ul");
-                if (menuNav.style.display === 'flex') {
-                    // Se o menu está aberto, fecha suavemente
-                    menuNav.style.opacity = '0';
-                    setTimeout(() => {
-                        menuNav.style.display = 'none';
-                    }, 300); // Tempo da animação em milissegundos
-                } else {
-                    // Se o menu está fechado, abre suavemente
-                    menuNav.style.display = 'flex';
-                    setTimeout(() => {
-                        menuNav.style.opacity = '1';
-                    }, 10); // Pequeno intervalo para a exibição ser ajustada antes da animação
-                }
-            });
-        }
-    </script>
+    <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +19,7 @@
             </div>
 
             <div class="menu">
-                <nav>
+                <nav class=>
                     <div class="menuMobile">
                         <div class="mm_line"></div>
                         <div class="mm_line"></div>
